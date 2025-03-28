@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Kadú</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpeg');
+            background-size: cover; 
+            background-position: center;  
+            background-attachment: fixed;  
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        
+
+        .product {
+            width: 250px;
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);  
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 15px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .product p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .product .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #1b5e20;
+        }
+
+        .header {
+            text-align: center;
+            text-align: center;
+            color:black;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Tienda Kadú - Productos de Streetwear</h1>
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <img src="prenda1.jpg" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Tamaño: M, L, XL</p>
+            <p>Composición: 100% algodón</p>
+            <p class="price">$25,00</p>
+            <button onclick="agregarAlCarrito('Camiseta Streetwear', 25000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="prenda2.jpg" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Tamaño: M, L, XL</p>
+            <p>Composición: 100% algodón</p>
+            <p class="price">$20,00</p>
+            <button onclick="agregarAlCarrito('Camiseta Streetwear', 20000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="prenda3.jpg" alt="Chaqueta Streetwear">
+            <h3>Chaqueta Streetwear</h3>
+            <p>Tamaño: S, M, L</p>
+            <p>Composición: 70% poliéster, 30% algodón</p>
+            <p class="price">$40,00</p>
+            <button onclick="agregarAlCarrito('Chaqueta Streetwear', 40000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="prenda4.webp" alt="Pantalón Streetwear">
+            <h3>Pantalón Streetwear</h3>
+            <p>Tamaño: 30, 32, 34</p>
+            <p>Composición: 80% poliéster, 20% elastano</p>
+            <p class="price">$30,00</p>
+             <button onclick="agregarAlCarrito('Pantalón Streetwear', 30000)">Comprar</button>
+         </div>
+
+         <div class="product">
+            <img src="prenda5.jpg" alt="Chaqueta Streetwear">
+            <h3>Chaqueta Streetwear</h3>
+            <p>Tamaño: S, M, L</p>
+            <p>Composición: 70% poliéster, 30% algodón</p>
+            <p class="price">$40,00</p>
+            <button onclick="agregarAlCarrito('Chaqueta Streetwear', 40000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="prenda6.jpg" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Tamaño: M, L, XL</p>
+            <p>Composición: 100% algodón</p>
+            <p class="price">$20,00</p>
+            <button onclick="agregarAlCarrito('Camiseta Streetwear', 20000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="prenda7.jpg" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Tamaño: M, L, XL</p>
+            <p>Composición: 100% algodón</p>
+            <p class="price">$25,00</p>
+            <button onclick="agregarAlCarrito('Camiseta Streetwear', 20000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="chaqueta1.jpg" alt="Chaqueta Streetwear">
+            <h3>Chaqueta Streetwear</h3>
+            <p>Tamaño: S, M, L</p>
+            <p>Composición: 70% poliéster, 30% algodón</p>
+            <p class="price">$40,00</p>
+            <button onclick="agregarAlCarrito('Chaqueta Streetwear', 40000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="pantalon1.jpg" alt="Pantalón Streetwear">
+            <h3>Pantalón Streetwear</h3>
+            <p>Tamaño: 30, 32, 34</p>
+            <p>Composición: 80% poliéster, 20% elastano</p>
+            <p class="price">$35,00</p>
+            <button onclick="agregarAlCarrito('Pantalón Streetwear', 30000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="camiseta1.jpg" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Tamaño: M, L, XL</p>
+            <p>Composición: 100% algodón</p>
+            <p class="price">$25,00</p>
+            <button onclick="agregarAlCarrito('Camiseta Streetwear', 20000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="chaqueta2.jpg" alt="Chaqueta Streetwear">
+            <h3>Chaqueta Streetwear</h3>
+            <p>Tamaño: S, M, L</p>
+            <p>Composición: 70% poliéster, 30% algodón</p>
+            <p class="price">$40,00</p>
+            <button onclick="agregarAlCarrito('Chaqueta Streetwear', 40000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="pantalon2.avif" alt="Pantalón Streetwear">
+            <h3>Pantalón Streetwear</h3>
+            <p>Tamaño: 30, 32, 34</p>
+            <p>Composición: 80% poliéster, 20% elastano</p>
+            <p class="price">$30,00</p>
+            <button onclick="agregarAlCarrito('Pantalón Streetwear', 30000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="camiseta2.webp" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Tamaño: M, L, XL</p>
+            <p>Composición: 100% algodón</p>
+            <p class="price">$20,00</p>
+            <button onclick="agregarAlCarrito('Camiseta Streetwear', 20000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="chaqueta3.jpg" alt="Chaqueta Streetwear">
+            <h3>Chaqueta Streetwear</h3>
+            <p>Tamaño: S, M, L</p>
+            <p>Composición: 70% poliéster, 30% algodón</p>
+            <p class="price">$40,00</p>
+            <button onclick="agregarAlCarrito('Chaqueta Streetwear', 40000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="pantalon3.jpg" alt="Pantalón Streetwear">
+            <h3>Pantalón Streetwear</h3>
+            <p>Tamaño: 30, 32, 34</p>
+            <p>Composición: 80% poliéster, 20% elastano</p>
+            <p class="price">$30,00</p>
+            <button onclick="agregarAlCarrito('Pantalón Streetwear', 30000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="camiseta3.webp" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Tamaño: M, L, XL</p>
+            <p>Composición: 100% algodón</p>
+            <p class="price">$20,00</p>
+            <button onclick="agregarAlCarrito('Camiseta Streetwear', 20000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="chaqueta4.webp" alt="Chaqueta Streetwear">
+            <h3>Chaqueta Streetwear</h3>
+            <p>Tamaño: S, M, L</p>
+            <p>Composición: 70% poliéster, 30% algodón</p>
+            <p class="price">$40,00</p>
+            <button onclick="agregarAlCarrito('Chaqueta Streetwear', 40000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="pantalon4.jpg" alt="Pantalón Streetwear">
+            <h3>Pantalón Streetwear</h3>
+            <p>Tamaño: 30, 32, 34</p>
+            <p>Composición: 80% poliéster, 20% elastano</p>
+            <p class="price">$25,00</p>
+            <button onclick="agregarAlCarrito('Pantalón Streetwear', 30000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="camiseta4.avif" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Tamaño: M, L, XL</p>
+            <p>Composición: 100% algodón</p>
+            <p class="price">$25,00</p>
+            <button onclick="agregarAlCarrito('Camiseta Streetwear', 20000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="camiseta5.jpg" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Tamaño: M, L, XL</p>
+            <p>Composición: 100% algodón</p>
+            <p class="price">$25,00</p>
+            <button onclick="agregarAlCarrito('Camiseta Streetwear', 20000)">Comprar</button>
+        </div>
+</body>
+</html>
